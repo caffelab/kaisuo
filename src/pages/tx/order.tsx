@@ -1,5 +1,5 @@
 import Taro,{Component,View,Text} from '@tarojs/taro';
-import {AtModal} from "taro-ui";
+import {AtModal, AtButton} from "taro-ui";
 import { AtModalContent, AtModalHeader } from 'dist/npm/taro-ui/dist/weapp';
 
 export default class Order extends Component{
@@ -40,9 +40,16 @@ export default class Order extends Component{
                     <View className="item">
                         <Text>总金额:</Text>
                         <View>
-                            <Text>￥</Text>
-                            <Text>{this.props.price}</Text>
+                            <Text className='doller_icon'>￥</Text>
+                            <Text className="value">{this.props.price}</Text>
                         </View>
+                    </View>
+                    <View className="">
+                        <AtButton
+                            className="submit"
+                        >
+                            确定入住
+                        </AtButton>
                     </View>
                 </AtModalContent>
             </AtModal>
