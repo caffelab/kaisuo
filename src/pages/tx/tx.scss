@@ -1,0 +1,52 @@
+.headerNav{
+    height: 128px;
+}
+
+.drawLine{
+    background: #dddddd;
+    width: 100%;
+    height: 10px;
+    margin-bottom: 103px;
+}
+
+.item{
+    margin-left: 26rpx;
+    margin-top: 50rpx;
+    margin-right: 26px;
+}
+.label{
+    font-size:26rpx;
+    margin-bottom: 26rpx;
+    font-family: Apple_PingFang;
+    margin-left: 12rpx;
+    margin-right: 12rpx;
+    width: 112rpx;
+    font-weight: 400;
+}
+.input{
+    border-radius: 10rpx;
+    border:2px solid;
+   // border-color:  rgba(203,203,203,1);
+    height: 6%;
+}
+
+.Btn{
+    height: 80rpx;
+    margin-left: 26rpx;
+    margin-right: 26rpx;
+    margin-top: 197rpx;
+}
+
+.msg{
+    color:red;
+    font-size:26px;
+}
+
+.floatLayer{
+    top:0;left: 0;right: 0;bottom: 0;
+    position: absolute;
+    margin: auto;
+    width:650px;
+    height: 900px;;
+
+}

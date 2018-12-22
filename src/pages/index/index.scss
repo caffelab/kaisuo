@@ -1,0 +1,111 @@
+
+.title{
+    font-size:36rpx;
+    font-weight: 400;
+    color:white;
+    margin-left: 26rpx;
+    margin-top: 66rpx;
+    position: fixed;
+    font-family: 'Apple_PingFang,sans-serif';
+}
+.bg{
+    background: url('http://imgs.guoxiaoge.cn/bg@3x.png') no-repeat;
+    background-color: black;
+    height: 100%;
+    min-width: 100%;
+    display:flex;
+    flex:1;
+    flex-direction: column;
+    position: fixed;
+    background-size: 100% 100%;
+    top: 0;
+    left:0;
+    overflow: hidden;
+}
+
+.imgButton{
+    top:0;right:0;left: 0;bottom: 0;
+    margin:auto;
+    position: absolute;
+    width: 50%;
+}
+
+.bottomMenu{
+    bottom: 0;
+    position: fixed;
+    margin-bottom: 15rpx;
+    width: 100%;
+}
+.iconStyle{
+    width:42rpx;
+    height: 42rpx;
+
+}
+
+.roomButton{
+    float: left;
+    margin-left: 167rpx;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.myButton{
+    float:right;
+    margin-right: 167rpx;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.textStyle{
+    font-family: 'Apple_PingFang,sans-serif';
+    color:white;
+    font-size: 24rpx;
+    font-weight: bold;
+    line-height: 70rpx;
+}
+
+.clkButton{
+    top:0;right:0;left: 0;bottom: 0;
+    opacity: 0.15;
+    position: absolute;
+    width:307rpx;
+    height: 307rpx;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.buttonRz{
+    top:0;right:0;left: 0;bottom: 0;
+    margin:auto;
+    position: absolute;
+    width:307rpx;
+    height: 307rpx;
+}
+
+.textValue{
+    top:0;right:0;left: 0;bottom: 0;
+    font-family: Apple_HeiTi;
+    font-size: 80rpx;
+    position: absolute;
+    color:white;
+    margin-top: 64rpx;
+    margin-left: 75rpx;
+    height: 159rpx;
+    letter-spacing: 100;
+    width: 180rpx;
+    line-height: 104rpx;
+    font-weight: 300;
+    
+}
+
+.wcShadow{
+    top:0;right:0;left: 0;bottom: 0;
+    margin:auto;
+    height: 382rpx;
+    width: 382rpx;
+    background: rgba($color: #FFFFFFFF, $alpha: 1.0);
+    border-radius: 50%;
+    opacity: 0.12;
+}
