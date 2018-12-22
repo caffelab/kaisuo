@@ -19,27 +19,30 @@ export default class Order extends Component{
                 <AtModalContent>
                     <View className='item'>
                         <Text >姓名:</Text>
-                        <Text></Text>
+                        <Text>{this.props.name}</Text>
                     </View>
                     <View className="item">
                         <Text>联系电话:</Text>
-                        <Text></Text>
+                        <Text>{this.props.phone}</Text>
                     </View>
                     <View className="item">
                         <Text>身份证号:</Text>
-                        <Text></Text>
+                        <Text>{this.props.id}</Text>
                     </View>
                     <View className="item">
                         <Text>入住时间:</Text>
-                        <Text></Text>
+                        <Text>{this.props.start_time}</Text>
                     </View>
                     <View className="item">
                         <Text>退房时间:</Text>
-                        <Text></Text>
+                        <Text>{this.props.end_time}</Text>
                     </View>
-                    <View className="item_je">
+                    <View className="item">
                         <Text>总金额:</Text>
-                        <Text></Text>
+                        <View>
+                            <Text>￥</Text>
+                            <Text>{this.props.price}</Text>
+                        </View>
                     </View>
                 </AtModalContent>
             </AtModal>
