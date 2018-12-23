@@ -1,10 +1,13 @@
 import Taro,{Component,View,Text} from '@tarojs/taro';
-import {AtModal, AtButton} from "taro-ui";
-import { AtModalContent, AtModalHeader } from 'dist/npm/taro-ui/dist/weapp';
+import {AtModal, AtButton,AtModalContent,AtModalHeader} from "taro-ui";
+
 
 export default class Order extends Component{
     constructor(props){
         super(props);
+        this.state = {
+            date:new Date()
+        }
     }
     handleClose(){
 
@@ -31,7 +34,7 @@ export default class Order extends Component{
                     </View>
                     <View className="item">
                         <Text>入住时间:</Text>
-                        <Text>{this.props.start_time}</Text>
+                        <Text>{this.state.date.toLocalTimeString()}</Text>
                     </View>
                     <View className="item">
                         <Text>退房时间:</Text>

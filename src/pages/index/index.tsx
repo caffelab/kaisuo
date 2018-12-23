@@ -22,12 +22,14 @@ export default class Rz extends Component{
 
     handleRzClick(){
         Taro.redirectTo({
-            url: '../../pages/tx/tx'
+            url: '../../pages/tx/index'
         });
     }
 
     navigateTo(url){
-        Taro.redirectTo({url:url});
+        this.setState({
+            isOpened:true
+        });
     }
 
     render(){

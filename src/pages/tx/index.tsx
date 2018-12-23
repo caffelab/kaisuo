@@ -1,12 +1,12 @@
-import Taro,{Config,Component,View,Text} from '@tarojs/taro';
-import './tx.scss';
+import Taro,{Component,View,Text, readBLECharacteristicValue} from '@tarojs/taro';
+import './index.scss';
 import {AtNavBar,AtInput, AtButton} from 'taro-ui';
 import Order from './order';
 
 export default class Tx extends Component{
     constructor(props){
         super(props);
-
+        
         this.state = {
             name : '',
             phone: '',
@@ -14,13 +14,22 @@ export default class Tx extends Component{
             name_msg:'',
             phone_msg:'',
             id_msg :'',
-            isOpened:false
+            isOpened:false,
+            orderString:''
         }
     }
 
-
+ 
     navigateTo(url){
         Taro.navigateTo({url:url});
+    }
+
+    handleNextClk(){
+        if(this.state.isOpened){
+            this.setState({isOpened:false});
+        }else{
+            this.setState({isOpened:true});
+        }
     }
 
     handleNameBlr(name){
@@ -69,11 +78,6 @@ export default class Tx extends Component{
         }
     }
 
-    handleNextClick(){
-        this.setState({
-            isOpended:`isOpened`
-        });
-    }
 
     render(){
         return(
@@ -94,7 +98,6 @@ export default class Tx extends Component{
                         placeholder = "请输入您的真实姓名"
                         value = {this.state.name}
                         onBlur = {this.handleNameBlr.bind(this)}
-                        style = {`color:red`}
                     />
                     <Text className="msg">{this.state.name_msg}</Text>
                 </View>
@@ -107,7 +110,6 @@ export default class Tx extends Component{
                         type = 'number'
                         value = {this.state.phone}
                         onBlur = {this.handlePhoneBlr.bind(this)}
-                        style ={{borderColor:(this.state.phone_msg==='')?`rgba(203,203,203,1)`:`red`}}
                     />
                     <Text className="msg">{this.state.phone_msg}</Text>
                 </View>
@@ -119,7 +121,6 @@ export default class Tx extends Component{
                         placeholder = "请输入您的身份证号码"
                         value = {this.state.id}
                         onBlur = {this.handleIdBlr.bind(this)}
-                        style ={{borderColor:(this.state.id_msg==='')?`rgba(203,203,203,1)`:`red`}}
                     />
                     <Text className="msg">{this.state.id_msg}</Text>
                 </View>
@@ -127,13 +128,12 @@ export default class Tx extends Component{
                     <AtButton
                         type='primary'
                         className='nextBtn'
-                        onClick = {this.handleNextClick.bind(this)}
+                        onClick = {this.handleNextClk.bind(this)}
                     >
                     下一步
                     </AtButton>
-
-                    <Order isOpended = {this.state.isOpened} className="floatLayer"/>
                 </View>
+                {this.state.isOpened ? <Order/>:''}
             </View>
         )
     }

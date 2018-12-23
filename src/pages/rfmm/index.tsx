@@ -12,7 +12,9 @@ export default class Index extends Component{
     render(){
         return (
             <View className="body">
-                
+                <View>
+                    <Text></Text>
+                </View>
             </View>
         );
     }
