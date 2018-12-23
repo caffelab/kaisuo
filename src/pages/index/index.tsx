@@ -17,7 +17,7 @@ export default class Rz extends Component{
     }
 
     handleRoom(value){
-
+        
     }
 
     handleRzClick(){

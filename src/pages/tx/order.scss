@@ -2,8 +2,11 @@
     width:650px;
     height: 895px;
     margin: 0px;
-    margin-left:50px;
-    margin-right: 220px;
+}
+
+.label{
+    font-size:26px;
+    color:#818181;
 }
 
 .value{
@@ -13,10 +16,19 @@
 
 .doller_icon{
     font-size:40px;
+    color:red;
 }
 
 .submit{
     margin-left:95px;
     margin-right:95px;
     margin-bottom:67px;
+}
+
+.item_je{
+    text-align: center;
+}
+
+.item{
+    margin-bottom: 31px;
 }

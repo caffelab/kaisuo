@@ -1,16 +1,23 @@
 import Taro,{Component,View,Text} from '@tarojs/taro';
 import {AtModal, AtButton,AtModalContent,AtModalHeader} from "taro-ui";
-
+import './order.scss';
 
 export default class Order extends Component{
     constructor(props){
         super(props);
+        var date = new Date();
         this.state = {
-            date:new Date()
+            date:date.toLocaleString()
         }
     }
     handleClose(){
 
+    }
+
+    handleSubmitClk(){
+        Taro.redirectTo({
+            url:'../ks/ks'
+        });
     }
     render(){
         return(
@@ -34,22 +41,23 @@ export default class Order extends Component{
                     </View>
                     <View className="item">
                         <Text>入住时间:</Text>
-                        <Text>{this.state.date.toLocalTimeString()}</Text>
+                        <Text>{this.state.date}</Text>
                     </View>
                     <View className="item">
                         <Text>退房时间:</Text>
                         <Text>{this.props.end_time}</Text>
                     </View>
-                    <View className="item">
+                    <View className="">
                         <Text>总金额:</Text>
-                        <View>
+                        <View className="item_je">
                             <Text className='doller_icon'>￥</Text>
-                            <Text className="value">{this.props.price}</Text>
+                            <Text className="value">666</Text>
                         </View>
                     </View>
                     <View className="">
                         <AtButton
-                            className="submit"
+                            className="submit" 
+                            onClick = {this.handleSubmitClk.bind(this)}
                         >
                             确定入住
                         </AtButton>

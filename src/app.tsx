@@ -27,7 +27,8 @@ class App extends Component {
     pages: [
       'pages/index/index',
       'pages/tx/index',
-      'pages/tx/order'
+//      'pages/tx/order',
+      'pages/ks/ks'
     ],
     window: {
       navigationStyle:'custom'
