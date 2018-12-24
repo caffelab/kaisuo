@@ -71,15 +71,21 @@
     border-radius: 20px;
     margin-left:33px;
     margin-top:22%;
+   
+}
+
+.displayOr{
+    //display:none;
 }
 
 .codeShow{
-    width:92.24%;
-    height: 16.92%;
+    width:630px;
+    height: 156px;
     margin-left: 3.7%;
     margin-top: 6.72%;
     border:2px solid rgba(102,153,255,1);
     border-radius:16px;
+    display: flex;
 }
 
 .password{
@@ -94,4 +100,170 @@
     font-size: 24px;
     margin-left: 24px;
     margin-top: 17px;
+}
+.menuView{
+    //width: 91.07%;
+    //height: 69.12%;
+    width:630px;
+    height: 547px;
+    border:1px solid rgba(198,198,198,1);
+    border-radius:16px;
+    margin-left: 3.7%;
+    margin-top:63px;
+}
+
+.columnLine{
+    width:1px;
+    height:548px;
+    background:rgba(198,198,198,1);
+    left: 375px;
+    position: absolute;
+}
+
+.lineTable{
+    clear:both;
+}
+.rowLine{
+    width:630px;
+    height: 1px;
+    background: rgba(198,198,198,1);
+    top:700px;
+    position: absolute;
+}
+.menuItem1{
+    display: flex;
+    width: 630px;
+    margin-top:47px;
+}
+.serverIcon{
+    width:180px;
+    height: 180px;
+    
+    //flex-direction: column;
+    margin-left: 70px;
+}
+
+
+
+.tf{
+    width:180px;
+    height: 180px;
+    margin-left: 138px;
+}
+.menuItem2{
+    margin-top:96px;
+    display: flex;
+    margin-left:68px;
+}
+.yqIcon{
+    width:180px;
+    height:180px;
+    //background:linear-gradient(180deg,rgba(249,121,142,1),rgba(245,195,173,1));
+    //border-radius:50%;
+    //flex-direction: column;
+    //margin-left:66px;
+    //margin-top:96px;
+    //position: relative;
+}
+.kfIcon{
+    width:180px;
+    height:180px;
+    //background:linear-gradient(180deg,rgba(247,164,190,1),rgba(207,164,242,1));
+    //border-radius:50%;
+    margin-left: 138px;
+    //flex-direction: column;
+    //float: right;
+    //margin-right: 66px;
+    //margin-bottom: 296px;
+}
+.menuServer{
+    width: 79px;
+    font-size: 38px;
+    top:50px;
+    line-height: 48px;
+    font-weight: bold;
+    color:white;
+    margin:auto;
+    position: relative;
+}
+
+.qccode{
+    width: 80px;
+    height: 80px;
+    padding-left: 8px;
+    padding-top: 8px;
+}
+
+.qccodeIcon{
+    width: 96px;
+    height: 96px;
+    float: right;
+    flex-direction: column;
+    margin-left: 177px;
+    margin-top: 34px;
+    border-color: 1px solid rgba(102,153,255,1);
+}
+
+.date{
+    flex-direction: column;
+}
+
+/**隐藏部分 二维码的宽度 */
+.qc{
+    display: none;
+    width:649px;
+    height:837px;
+    background:rgba(255,255,255,1);
+    margin-left:14px;
+}
+
+.boder{
+    width:538px;
+    height:545px;
+    background:rgba(255,255,255,1);
+    border:1px solid rgba(195,195,195,1);
+    margin-left: 48px;
+}
+
+.demo{
+    width:512px;
+    height: 512px;
+    margin-left: 13px;
+    margin-bottom: 28px;
+}
+
+.rfmm{
+    font-size:44px;
+    font-weight: bold;
+    line-height: 104px;
+    text-align: center;
+}
+
+.rfmmView{
+    margin: 0 auto;
+    text-align: center;
+    padding:0 auto;
+}
+
+.sx{
+    color:#9A9A9A;
+    font-size:24px;
+    font-weight: bold;
+    line-height: 70px;
+}
+
+.sxView{
+    margin:0 auto;
+    padding:0 auto;
+    text-align: center;
+}
+
+.close{
+    margin-top:58px;
+    margin-left: 287px;
+}
+
+.closeIcon{
+    width: 74px;
+    height: 74px;
 }
