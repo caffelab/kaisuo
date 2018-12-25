@@ -1,5 +1,5 @@
-import Taro,{Component,View,Text,Picker} from '@tarojs/taro';
-import {AtNavBar,AtCalendar} from 'taro-ui';
+import Taro,{Component,View,Text,Textarea,Picker} from '@tarojs/taro';
+import {AtNavBar,AtButton} from 'taro-ui';
 
 /**
  * @todo 开房服务填写及提交页面
@@ -16,6 +16,9 @@ export default class Index extends Component{
         });
     }
 
+    handleBackBtn(){
+        Taro.navigateBack();
+    }
     
     render(){
         return (
@@ -25,14 +28,19 @@ export default class Index extends Component{
                     color='#000000'
                     title = "客服服务填写"
                     leftIconType = 'chevron-left'
+                    onClickLeftIcon = {this.handleBackBtn.bind(this)}
                 />
                 <View className="br"></View>
                 <View className="timePicker">
                     <Text className="预期到达时间"></Text>
-                    <Picker mode='date' onChange={this.onDateChange.bind(this)}>
-                    </Picker>
-                    <Picker mode="time" onChange={this.onTimeChange.bind(this)}>
-                    </Picker>
+                    <Picker dateFormat='MM-DD' timeFormat="H:i:s"/>
+                </View>
+                <View className="bz">
+                    <Text>备注:</Text>
+                    <Textarea className='bzsr' placeholder='请写出您的需求，如需更换床单，需要洗簌用品等详情需求'/>
+                </View>
+                <View className='btn'>
+                    <AtButton className='submit' type='primary'>提交申请</AtButton>
                 </View>
             </View>
         );

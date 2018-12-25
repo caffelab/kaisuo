@@ -1,0 +1,75 @@
+.bg{
+    background: url('http://imgs.guoxiaoge.cn/bg@3x.png') no-repeat;
+    background-color: black;
+    height: 100%;
+    min-width: 100%;
+    
+    background-size: 100% 100%;
+    top: 0;
+    left:0;
+    overflow: hidden;
+}
+
+.clkButton{
+    top:0;right:0;left: 0;bottom: 0;
+    opacity: 0.15;
+    position: absolute;
+    width:307rpx;
+    height: 307rpx;
+    border-radius: 50%;
+    margin: auto;
+}
+.textValue{
+    top:0;right:0;left: 0;bottom: 0;
+    font-family: Apple_HeiTi;
+    font-size: 80rpx;
+    position: absolute;
+    color:white;
+    margin-top: 64rpx;
+    margin-left: 75rpx;
+    height: 159rpx;
+    letter-spacing: 100;
+    width: 180rpx;
+    line-height: 104rpx;
+    font-weight: 300;
+    
+}
+.textValue{
+    top:0;right:0;left: 0;bottom: 0;
+    font-family: Apple_HeiTi;
+    font-size: 80rpx;
+    position: absolute;
+    color:white;
+    margin-top: 64rpx;
+    margin-left: 75rpx;
+    height: 159rpx;
+    letter-spacing: 100;
+    width: 180rpx;
+    line-height: 104rpx;
+    font-weight: 300;
+    
+}
+.buttonTf{
+    top:0;right:0;left: 0;bottom: 0;
+    margin:auto;
+    position: absolute;
+    width:307rpx;
+    height: 307rpx;
+}
+
+.Info{
+    bottom: 0;
+    position: fixed;
+    margin-bottom: 300px;
+    width: 100%;
+    margin-left:93px;
+}
+
+.ts{
+    color:white;
+    font-size:22px;
+}
+
+.icon{
+    margin-top:43px;
+}

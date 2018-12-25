@@ -35,8 +35,11 @@ export default class Rz extends Component{
     render(){
         return (
             <View className="at-row bg"> 
-                <Text className="at-col title">享住—小程序</Text>
-                <View className='wcShadow'/>
+                <View style={{marginTop:`${global.fl}px`}}>
+                    <Text className="at-col title">享住—小程序</Text>
+                </View>
+                
+                
                 <View className="buttonRz" onClick={this.handleRzClick.bind(this)} >
                     <Text className="textValue">我要入住</Text>
                     <Button className="clkButton"/>

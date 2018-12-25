@@ -2,8 +2,8 @@
     font-size:36rpx;
     font-weight: 400;
     color:white;
-    margin-left: 26rpx;
-    margin-top: 66rpx;
+    margin-left: 26px;
+    margin-top: 32px;
     position: fixed;
     font-family: 'Apple_PingFang,sans-serif';
 }
@@ -127,8 +127,7 @@
     width:630px;
     height: 1px;
     background: rgba(198,198,198,1);
-    top:700px;
-    position: absolute;
+    margin-top:10px;
 }
 .menuItem1{
     display: flex;
@@ -210,7 +209,7 @@
 
 /**隐藏部分 二维码的宽度 */
 .qc{
-    display: none;
+    
     width:649px;
     height:837px;
     background:rgba(255,255,255,1);

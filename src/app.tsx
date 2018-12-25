@@ -28,7 +28,11 @@ class App extends Component {
       'pages/index/index',
       'pages/tx/index',
 //      'pages/tx/order',
-      'pages/ks/ks'
+      'pages/ks/ks',
+      'pages/kffw/index',
+      'pages/tf/index',
+      'pages/tf/success',
+      'pages/pj/index'
     ],
     window: {
       navigationStyle:'custom'
@@ -55,5 +59,27 @@ class App extends Component {
     )
   }
 }
+
+Taro.getSystemInfo({
+  success: res => {
+    let titleBarHeight = 0;
+    if(res.system.indexOf("Android") !== -1){
+      titleBarHeight = 68;
+      global.fl = 0;
+    }else{
+      if(res.model.indexOf("iPhone X") !== -1){
+        titleBarHeight = 88;
+        global.fl = 43;
+      }else{
+        titleBarHeight = 64;
+        global.fl=0;
+      }
+    }
+    global.barHeight = titleBarHeight;
+    global.barLineHeight = titleBarHeight + res.statusBarHeight;
+    global.statusBar = res.statusBarHeight;
+  }
+})
+
 
 Taro.render(<App />, document.getElementById('app'))

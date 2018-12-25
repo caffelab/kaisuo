@@ -6,8 +6,11 @@ export default class Order extends Component{
     constructor(props){
         super(props);
         var date = new Date();
+        var mt = new Date();
+        mt.setDate(mt.getDate()+1);
         this.state = {
-            date:date.toLocaleString()
+            date:date.toLocaleString(),
+            mt:mt.toLocaleString() 
         }
     }
     handleClose(){
@@ -28,27 +31,27 @@ export default class Order extends Component{
                 <AtModalHeader>确定订单信息</AtModalHeader>  
                 <AtModalContent>
                     <View className='item'>
-                        <Text >姓名:</Text>
-                        <Text>{this.props.name}</Text>
+                        <Text className='label'>姓&#8195;&#8195;名:</Text>
+                        <Text className="text">{this.props.name}</Text>
                     </View>
                     <View className="item">
-                        <Text>联系电话:</Text>
-                        <Text>{this.props.phone}</Text>
+                        <Text className='label'>联系电话:</Text>
+                        <Text className="text">{this.props.phone}</Text>
                     </View>
                     <View className="item">
-                        <Text>身份证号:</Text>
-                        <Text>{this.props.id}</Text>
+                        <Text className='label'>身份证号:</Text>
+                        <Text className="text">{this.props.ids}</Text>
                     </View>
                     <View className="item">
-                        <Text>入住时间:</Text>
-                        <Text>{this.state.date}</Text>
+                        <Text className='label'>入住时间:</Text>
+                        <Text className="text">{this.state.date}</Text>
                     </View>
                     <View className="item">
-                        <Text>退房时间:</Text>
-                        <Text>{this.props.end_time}</Text>
+                        <Text className='label'>退房时间:</Text>
+                        <Text className="text">{this.state.mt}</Text>
                     </View>
                     <View className="">
-                        <Text>总金额:</Text>
+                        <Text <Text className='label'>总金额:</Text>
                         <View className="item_je">
                             <Text className='doller_icon'>￥</Text>
                             <Text className="value">666</Text>
